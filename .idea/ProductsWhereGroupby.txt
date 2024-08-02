@@ -1,0 +1,9 @@
+select categoryid, count(*) as "total" from products
+group by categoryid having count(*) >= 10;
+
+categoryid	"count"
+1 	12
+2 	12
+3 	13
+4 	10
+8 	12
