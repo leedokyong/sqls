@@ -1,0 +1,15 @@
+SELECT
+    c.CategoryName,
+    COUNT(*) AS "수량"
+FROM
+    Products p
+    INNER JOIN Categories c ON p.CategoryID = c.CategoryID
+WHERE
+    p.CategoryID IN (1, 7)
+GROUP BY
+    c.CategoryName;
+
+    Number of Records: 2
+    CategoryName	"수량"
+    Beverages 	12
+    Produce 	5
