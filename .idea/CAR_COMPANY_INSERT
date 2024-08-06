@@ -1,5 +1,5 @@
 -- CAR 테이블에 데이터 삽입
-INSERT INTO `CAR` (`CAR_PK`, `CAR_NAME`, `CP_BARND`)
+INSERT INTO `CAR` (`CAR_PK`, `CAR_NAME`, `CP_ID`)
 VALUES ('CAR_PK01', '소나타', '현대'),
        ('CAR_PK02', '쏘렌토', '기아'),
        ('CAR_PK03', '카마로', '쉐보레'),
@@ -20,9 +20,9 @@ VALUES ('OPTION_PK01', 'CAR_PK01', '네비게이션'),
        ('OPTION_PK10', 'CAR_PK05', '전자식 메모리 시트');
 
 -- YEAR 테이블에 데이터 삽입
-INSERT INTO `YEAR` (`YEAR_ID`, `CAR_PK`, `YEAR`)
-VALUES ('YEAR_ID01', 'CAR_PK01', 2020),
-       ('YEAR_ID02', 'CAR_PK02', 2018),
-       ('YEAR_ID03', 'CAR_PK03', 2019),
-       ('YEAR_ID04', 'CAR_PK04', 2017),
-       ('YEAR_ID05', 'CAR_PK05', 2021);
+INSERT INTO `YEAR` (`YEAR_PK`, `CAR_PK`, `YEAR`)
+VALUES ('YEAR_PK01', 'CAR_PK01', 2020),
+       ('YEAR_PK02', 'CAR_PK02', 2018),
+       ('YEAR_PK03', 'CAR_PK03', 2019),
+       ('YEAR_PK04', 'CAR_PK04', 2017),
+       ('YEAR_PK05', 'CAR_PK05', 2021);
