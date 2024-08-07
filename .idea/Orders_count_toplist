@@ -1,0 +1,6 @@
+SELECT e.FirstName, e.LastName, e.EmployeeID, count(e.EmployeeID) as '주문 횟수'
+FROM Employees e
+LEFT JOIN Orders Ord
+ON e.EmployeeID = Ord.EmployeeID
+GROUP BY e.FirstName, e.LastName, e.EmployeeID
+ORDER BY count(e.EmployeeID) DESC;
