@@ -1,0 +1,4 @@
+SELECT * FROM Employees em
+left join Orders Ord
+on Ord.EmployeeID = em.EmployeeID
+where Ord.EmployeeID is null;
