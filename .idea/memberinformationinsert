@@ -1,0 +1,26 @@
+INSERT INTO HOBBY (HOBBY_PK, HOBBY) VALUES
+('HOBBY1', '등산'),
+('HOBBY2', '요리'),
+('HOBBY3', '음악감상'),
+('HOBBY4', '수영'),
+('HOBBY5', '영화감상'),
+('HOBBY6', '자전거'),
+('HOBBY7', '요가'),
+('HOBBY8', '그림 그리기'),
+('HOBBY9', '독서'),
+('HOBBY10', '공원 산책');
+
+INSERT INTO ADDRESS (ADDRESS_PK, ADDRESS) VALUES
+('ADDRESS1', '서울특별시 강남구'),
+('ADDRESS2', '경기도 수원시'),
+('ADDRESS3', '인천광역시 부평구'),
+('ADDRESS4', '대전광역시 서구'),
+('ADDRESS5', '경상북도 포항시 북구');
+
+INSERT INTO MEMBER (MEMBER_PK, HOBBY_ID, ADDRESS_ID, MEMBER_NAME, MEMBER_AGE, MEMBER_PHONE, MEMBER_EMAIL, MAMEBR_GENDER) VALUES
+('MEMBER1', 'HOBBY1', 'ADDRESS1', '홍길동', 30, '010-1234-5678', 'hong@example.com', '남'),
+('MEMBER2', 'HOBBY3', 'ADDRESS2', '김영희', 25, '010-9876-5432', 'kim@example.com', '여'),
+('MEMBER3', 'HOBBY5', 'ADDRESS3', '이철수', 35, '010-2468-1357', 'lee@example.com', '남'),
+('MEMBER4', 'HOBBY7', 'ADDRESS4', '박민준', 28, '010-8642-9137', 'park@example.com', '남'),
+('MEMBER5', 'HOBBY9', 'ADDRESS5', '임지영', 32, '010-5793-6241', 'lim@example.com', '여');
+
